@@ -1,0 +1,21 @@
+{
+    "name": "MagtiFun",
+    "version": "1.0",
+    "manifest_version": 2,
+    "icons": {
+        "128": "logo.png"
+    },
+    "permissions": [
+        "storage",
+        "http://*/", 
+        "https://*/"
+    ],   
+    "web_accessible_resources": ["icon.png"],
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+    "browser_action": {
+        "default_title": "MagtiFun",        
+        "default_icon": "icon.png",
+		"default_popup": "popup.html"
+    }
+	
+}

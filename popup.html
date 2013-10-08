@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MagtFun</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link type="text/css" href="popup.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+		<script type="text/javascript"  src="popup.js"></script>	
+        <script type="text/javascript" src="uit.js"></script>			
+    </head>
+    <body>
+	<div id='overlay'></div>
+    
+    <div class="simple_overlay" id="mies1">
+            <div class="creds">
+                <span>User:</span> <input type="text" id="user" size="20"  value="">
+            </div>
+            <div class="creds">
+                <span>Password:</span> <input type="password" id="passwd" size="20"  value="">
+            </div>            
+            <div class="creds">
+                <input type="button" id="saveBtn" class="redBtn" value="OK">
+            </div>
+    </div>
+		
+	<div id='container' class='container'>
+		<div>
+			<div>
+                <span id="curUser">&nbsp;</span>
+                <span id="loader"><img src="loader.gif"></span>
+                <span id="logout" style="display: none;"><a href="#" class="redBtn">გამოსვლა</a></span>
+                <span id="login" rel="#mies1" style="display: none;"><a href="#" class="redBtn">შესვლა</a></span>
+			</div>
+			<hr>
+			<input type="text" id="phone" 
+				placeholder="599XXXXXX"
+				autocomplete="on" 
+				min="9" max="13" 
+				maxlength="13" 
+				size="14">
+			<span id="smsNo">&nbsp;</span>
+			
+		</div>
+		<div>
+		<textarea id="message" maxlength="146" wrap="hard" cols="40" rows="5"></textarea>
+		</div>
+		<div>
+		<span id="log">Ready</span>
+		<input type="button" id="sendBtn" disabled="disabled" class="disBtn" value="გაგზავნა">
+		</div>
+	
+	</div>
+	
+
+    </body>
+</html>
