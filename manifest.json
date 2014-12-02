@@ -1,9 +1,9 @@
 {
     "name": "MagtiFun",
-    "version": "1.0",
+    "version": "1.1",
     "manifest_version": 2,
     "icons": {
-        "128": "logo.png"
+        "128": "icon.png"
     },
     "permissions": [
         "storage",
@@ -16,6 +16,6 @@
         "default_title": "MagtiFun",        
         "default_icon": "icon.png",
 		"default_popup": "popup.html"
-    }
-	
+    },
+	"author": "GWSMaster"
 }
